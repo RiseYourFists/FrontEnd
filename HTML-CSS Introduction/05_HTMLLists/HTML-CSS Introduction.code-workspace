@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "HTML-CSS Introduction",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "02_Fruits"
+	}
+}
