@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Create Account</h1>
+        <form target="_self" action="" class="user-credentials" method="get">
+           <div>
+                <label for="username">Username:</label>
+                <input minlength="3" maxlength="15" required type="text" name="username" placeholder="insert username here..." id="username">
+           </div>
+
+           <div>
+               <label for="password-field">Password:</label>
+               <input oninput="return this" required minlength="6" max="12" type="password" name="password-field" placeholder="insert password here...">   
+           </div>
+           <div>
+                <div>
+                    <label for="account type">Account type:</label>
+                    <select name="" id="account type">
+                        <option value="null" aria-readonly="true">choose type</option>
+                        <option value="guest">guest</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+
+                <div>
+                    <label for="terms-of-agreement">
+                        I agree with the <a href="">terms</a>
+                    </label>
+                    <input type="checkbox" name="terms-of-agreement" id="terms">
+                </div>
+            </div>
+            <p class="submit-button">
+                <button type="submit">Create</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

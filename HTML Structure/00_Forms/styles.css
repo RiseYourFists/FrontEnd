@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: rgba(10, 9, 52, 0.716);
+    border-radius: 8px;
+    border-color: 1px solid white;
+    font-variant: small-caps;
+}
+div{
+    background-color: rgba(10, 9, 52, 0.716);
+    border-radius: 9px;
+    border-color: 1px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    align-items: center;
+    color: white;
+    min-width: 95%;
+    max-width: 100%;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+input{
+    background-color: rgba(10, 9, 52, 0.716);
+    border-radius: 8px;
+    border-color: 1px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-variant-east-asian: full-width;
+    
+}
+
+.submit-button{
+   text-align: center;
+}
+
+p.submit-button button{
+    padding: 5px 15px;
+    border-radius: 9px;
+    background-color: rgba(10, 9, 52, 0.716);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-variant: small-caps;
+    
+}
+
+body{
+    background-color:rgb(4, 110, 250)
+}
+
+select{
+    background-color: rgba(10, 9, 52, 0.716);
+    border-radius: 8px;
+    border-color: 1px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-variant-east-asian: full-width;
+}
