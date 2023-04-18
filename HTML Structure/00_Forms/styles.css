@@ -1,24 +1,20 @@
 h1{
     text-align: center;
-    color: white;
     font-style: italic;
-    background-color: rgba(10, 9, 52, 0.716);
-    border-radius: 8px;
-    border-color: 1px solid white;
     font-variant: small-caps;
 }
+
 div{
     background-color: rgba(10, 9, 52, 0.716);
     border-radius: 9px;
     border-color: 1px solid white;
     padding: 5px 10px;
-    margin: 5px;
-    align-items: center;
+    margin: 1%;
     color: white;
     min-width: 95%;
     max-width: 100%;
-    font-variant: small-caps;
-    font-weight: 900;
+    text-align: center;
+    width: 90%;
 }
 
 input{
@@ -27,16 +23,13 @@ input{
     border-color: 1px solid white;
     padding: 5px 10px;
     margin: 5px;
-    font-size: 18px;
     color: white;
-    font-variant: small-caps;
     font-weight: 900;
-    font-variant-east-asian: full-width;
-    
 }
 
 .submit-button{
    text-align: center;
+
 }
 
 p.submit-button button{
@@ -51,7 +44,8 @@ p.submit-button button{
 }
 
 body{
-    background-color:rgb(4, 110, 250)
+    background-color:rgb(4, 110, 250);
+    
 }
 
 select{
@@ -64,5 +58,53 @@ select{
     color: white;
     font-variant: small-caps;
     font-weight: 900;
-    font-variant-east-asian: full-width;
+}
+
+option{
+    background-color: rgba(10, 9, 52, 0.716);
+    border-radius: 8px;
+    border-color: 1px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    background-color: rgba(10, 9, 52, 0.716);
+    border-color: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+label{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    margin-top: 0;
+}
+
+html{
+    font-weight: 900;
+    font-size: 18px;
+    font-variant: small-caps;
+    color: white;
+    font-family: cursive;
 }

@@ -8,12 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div>
+            <h1>The Site!</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
         <h1>Create Account</h1>
         <form target="_self" action="" class="user-credentials" method="get">
            <div>
                 <label for="username">Username:</label>
-                <input minlength="3" maxlength="15" required type="text" name="username" placeholder="insert username here..." id="username">
+                <input minlength="3" maxlength="15" required type="text" name="username" placeholder="insert username here..." >
+           </div>
+
+           <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="insert e-mail here..." required>
            </div>
 
            <div>
@@ -23,10 +40,12 @@
            <div>
                 <div>
                     <label for="account type">Account type:</label>
-                    <select name="" id="account type">
-                        <option value="null" aria-readonly="true">choose type</option>
+                    <select name="permission" id="account type" required>
+                        <option value="" hidden selected>choose type</option>
                         <option value="guest">guest</option>
-                </select>
+                        <option value="moderator">moderator</option>
+                        <option value="admin">admin</option>
+                    </select>
                 </div>
 
                 <div>
@@ -34,20 +53,28 @@
                     <input type="radio" name="gender" id="male" value="male">
 
                     <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female" value="female">
+                    <input required type="radio" name="gender" id="female" value="female">
                 </div>
 
                 <div>
                     <label for="terms-of-agreement">
                         I agree with the <a href="">terms</a>
                     </label>
-                    <input type="checkbox" name="terms-of-agreement" id="terms">
+                    <input required type="checkbox" name="terms-of-agreement" id="terms">
                 </div>
             </div>
+
             <p class="submit-button">
                 <button type="submit">Create</button>
             </p>
         </form>
     </main>
+
+    <footer>
+        
+        <div>
+            <p>The Site LTD 2023<sup> &copy;</sup></p>
+        </div>
+    </footer>
 </body>
 </html>
