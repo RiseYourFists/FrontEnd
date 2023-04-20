@@ -1,12 +1,12 @@
-@import "https://use.fontawesome.com/releases/v6.4.0/css/all.css";
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
 @font-face {
     font-family: "Helvetica Neue";
-    src: url(HelveticaNeue.ttf);
+    src: url("HelveticaNeue.ttf");
 }
 
 @font-face {
     font-family: "proxima-nova";
-    src: url(Proxima\ Nova\ Regular.ttf);
+    src: url("Proxima\ Nova\ Regular.ttf");
 }
 
 body{
