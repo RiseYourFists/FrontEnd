@@ -4,12 +4,13 @@ body{
 
 h1{
     font-family:
-        serif,
         Sentinel A,
         Sentinel B,
         Georgia,
         Times New Roman,
-        Times
+        Times,
+        serif
+
     ;
 
     font-weight: 400;
@@ -19,12 +20,12 @@ h1{
 
 span{
     font-family: 
-        sans-serif,
         Graphik Semibold Web,
         Open Sans,
         Helvetica Neue,
         Helvetica,
-        Arial
+        Arial,
+        sans-serif
     ;
 
     font-style: oblique;
@@ -36,11 +37,12 @@ span{
 
 p{
     font-family: 
-        sans-serif,
-        Graphik Regular Web,
-        Helvetica Neue,
-        Helvetica,
-        Arial
+        Graphik Regular Web, 
+        Helvetica Neue, 
+        Helvetica, 
+        Arial,
+        sans-serif
+
     ;
 
     font-weight: 400px;
