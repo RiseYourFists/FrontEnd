@@ -4,6 +4,7 @@ body{
     padding: 50px;
     box-sizing: border-box;
     line-height: 1.5;
+    min-width: 600px;
 }
 
 nav a{
@@ -13,13 +14,15 @@ nav a{
 
 body > header{ 
     border-bottom: 3px solid;
-    padding: 20px 0px;
+    padding-bottom: 20px;
+    height: 30px;
     position: relative;
 }
 
 body header nav ul li{
     display: inline-block;
-    margin: 10px;
+    list-style: none;
+    margin-left: 10px;
 }
 
 body header > p{
@@ -27,13 +30,14 @@ body header > p{
     font-weight: 900;
     font-size: 22px;
     display: inline;
+    line-height: 1;
 }
 
 body header ul{
     position: absolute;
     right: 20px;
-    bottom: 5px;
-
+    bottom: 50%;
+    transform: translate(0%, 50%);
     display: inline;
 }
 
