@@ -78,7 +78,7 @@ blockquote{
     
     display: inline-block;
     position: absolute;
-    left: 60%;
+    left: 55%;
     top: -15px
 }
 
@@ -97,4 +97,8 @@ div.article > p{
 
 section{
     margin-top: 50px;
+}
+
+.author{
+    text-align: right;
 }
