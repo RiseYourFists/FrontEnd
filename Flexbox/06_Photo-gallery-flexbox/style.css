@@ -1,0 +1,23 @@
+body, ul, li{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+body{
+    width: 70vw;
+    flex-basis: 100%;
+    justify-self: center;
+    background-color: #eee;
+}
+
+ul{
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+    border: 10px solid black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
