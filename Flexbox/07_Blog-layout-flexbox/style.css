@@ -1,0 +1,70 @@
+body{
+    margin: 20px;
+    background-color: rgb(238,238,238);
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+header{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+h1,h2,h3, blockquote{
+    font-family: Georgia, serif;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
+main{
+    width: 70%;
+    margin-right: 15px;
+}
+
+.img-1{
+    float: right;
+}
+
+.img-2{
+    float: left;
+}
+
+img{
+    padding: 10px;
+    margin: 15px;
+    border: 5px solid black;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    background-color: rgb(255,255,255);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(0, 153, 0);
+}
+
+blockquote{
+    font-style: italic;
+    color: gray;
+    width: 50%;
+    margin: 0 30px;
+}
+
+.ref-article{
+    width: 50%;
+    border-right: 3px solid lightgray ;
+    padding-right: 3px;
+}
+
+.article{
+    display: flex;
+}
+
+.author{
+    text-align: right;
+}
