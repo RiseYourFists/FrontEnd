@@ -2,6 +2,7 @@ body{
     margin: 0;
     width: 100vw;
     min-width: 275px;
+    overflow-x: hidden;
 }
 
 a{
