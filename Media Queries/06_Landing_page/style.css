@@ -1,0 +1,206 @@
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+main{
+    padding: 0px 40px;
+    position: relative;
+}
+
+.main-bg{
+    position: absolute;
+    opacity: 0.1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.08); /* adjust opacity as needed */
+    z-index: -1;
+}
+
+.main-nav{
+    display: flex;
+    width: 65%;
+    justify-content: end;
+}
+
+.header-title{
+    width: 100%;
+    flex: 1 1;
+}
+
+.main-nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-header{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn-small-display{
+    display: none;
+}
+
+.offer{
+    padding: 0px 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offer .content{
+    width: 60%;
+    margin-right: 20px;
+}
+
+.offer .ico{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+hr{
+    background-color: black;
+    height: 4px;
+    border: none;
+    width: 80px;
+}
+
+.team{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team h2{
+    width: 100%;
+    text-align: center;
+}
+
+.cards-wrapper, .testimonials-wrapper{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.separator{
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.employee-card, .testimonial-card{
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-pic {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px gray;
+}
+  
+.profile-pic::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-radius: 100%;
+    z-index: 1;
+    
+}
+  
+.profile-pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
+}
+
+.profile-desc{
+    text-align: center;
+}
+
+.profile-desc *{
+    margin: 3px 0px;
+}
+
+.profile-desc .company-position{
+    margin-bottom: 10px;
+    font-style: italic;
+    color: rgb(55, 55, 55);
+}
+
+.subscription {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px;
+    width: 100%;
+    background: radial-gradient(circle, transparent 20%, #68347b 20%, #68347b 80%, transparent 80%, transparent) 0% 0% / 50px 50px, radial-gradient(circle, transparent 20%, #68347b 20%, #68347b 80%, transparent 80%, transparent) 25px 25px / 50px 50px, linear-gradient(#6d3980 3px, transparent 3px) 0px -1.5px / 25px 25px, linear-gradient(90deg, #6d3980 3px, #68347b 3px) -1.5px 0px / 25px 25px #68347b;
+    background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px;
+    background-color: #68347b;
+}
+
+.subscription h2{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: -20px ;
+}
+
+.subscription hr{
+    margin-bottom: 30px;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 18px, #fcfcfc 18px, #fcfcfc 36px);
+    background-color: #ffffff;
+    padding: 0px 40px
+}
+
+.testimonials h2{
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .menu-btn-small-display{
+        display: initial;
+    }
+
+    .main-nav{
+        display: none;
+    }
+}
