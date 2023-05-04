@@ -5,7 +5,7 @@ html{
 .sub-heading{
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -1.5px;
-    line-height: 1.1;
+    line-height: 1.2;
     font-size: 12px;
     font-weight: 100;
     text-transform: uppercase;
@@ -21,5 +21,10 @@ html{
 }
 
 .ico-wrapper{
-    font-size: 150px;
+    font-size: 100px;
+}
+
+.speech{
+    font-style: italic;
+    color: grey;
 }
