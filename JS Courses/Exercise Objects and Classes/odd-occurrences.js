@@ -10,7 +10,7 @@ function oddOccurrences(text){
         }
         occurrences[word + ' ']++;
     });
-    
+    // the added white space to the keys is to prevent the object to auto sort numeric properties
     let keys = Object.keys(occurrences);
     let result = [];
 
