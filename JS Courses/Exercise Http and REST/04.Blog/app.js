@@ -52,6 +52,9 @@ function attachEvents() {
             const selectedOption = postSelection.options[index];
             const postId = selectedOption.value;
 
+            postTitle.textContent = selectedOption.textContent;
+            postContent.textContent = posts[postId].body;
+
             let postComments = [];
             let keys = Object.keys(comments);
 
@@ -60,9 +63,6 @@ function attachEvents() {
                     postComments.push(comments[key]);
                 }
             }
-
-            postTitle.textContent = selectedOption.textContent;
-            postContent.textContent = posts[postId].body;
 
             for (const comment of postComments) {
                 let holder = createElement('li', 'id', comment.id);
