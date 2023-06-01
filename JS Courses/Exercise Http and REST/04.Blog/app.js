@@ -1,4 +1,5 @@
 function attachEvents() {
+
     const loadPostsBtn = document.getElementById('btnLoadPosts');
     const viewPostBtn = document.getElementById('btnViewPost');
     const postSelection = document.getElementById('posts');
@@ -13,7 +14,7 @@ function attachEvents() {
     const POSTS_URL = 'http://localhost:3030/jsonstore/blog/posts/';
     const COMMENTS_URL = 'http://localhost:3030/jsonstore/blog/comments/';
 
-    let comments = [];
+    
     let posts = [];
 
     function getPostsEvent(){
@@ -36,37 +37,39 @@ function attachEvents() {
 
                 postSelection.appendChild(option);
             }
-
-            fetch(COMMENTS_URL)
-            .then((res)=> res.json())
-            .then((commentData)=> {comments = commentData;})
         })
     }
 
     function loadPostEvent(){
         elementClear(commentSection);
-
-        const selectedOption = postSelection.options[postSelection.selectedIndex];
-        const postId = selectedOption.value;
-
-        let postComments = [];
-        let keys = Object.keys(comments);
-
-        for (const key of keys) {
-            if(comments[key].postId === postId){
-                postComments.push(comments[key]);
-            }
-        }
-
-        postTitle.textContent = selectedOption.textContent;
-        postContent.textContent = posts[postId].body;
-
-        for (const comment of postComments) {
-            let holder = createElement('li', 'id', comment.id);
-            holder.textContent = comment.text;
-            commentSection.appendChild(holder);
-        }
         
+        fetch(COMMENTS_URL)
+        .then((res)=> res.json())
+        .then((commentData)=> {
+            let comments = commentData;
+
+            let index = postSelection.selectedIndex
+            const selectedOption = postSelection.options[index];
+            const postId = selectedOption.value;
+
+            let postComments = [];
+            let keys = Object.keys(comments);
+
+            for (const key of keys) {
+                if(comments[key].postId === postId){
+                    postComments.push(comments[key]);
+                }
+            }
+
+            postTitle.textContent = selectedOption.textContent;
+            postContent.textContent = posts[postId].body;
+
+            for (const comment of postComments) {
+                let holder = createElement('li', 'id', comment.id);
+                holder.textContent = comment.text;
+                commentSection.appendChild(holder);
+            }
+        });
     }
 
     function createElement(elementType, attrType, attrValue){
