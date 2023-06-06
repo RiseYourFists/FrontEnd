@@ -1,0 +1,180 @@
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+:root{
+    --btn-primary-color: #370511;
+    --btn-padding: 5px 15px;
+    --btn-radius: 25px;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+*{
+    color: black;
+}
+
+html{
+    font-family: 'Poppins';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    padding: 10px 240px;
+    margin-bottom: 60px;
+}
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.page-header > header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.page-header > header > nav > ul{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary{
+    background-color: var(--btn-primary-color);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    color: white;
+}
+
+.content{
+    margin-bottom: 20px;
+    display: block
+}
+
+.title-wrapper{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card{
+    height: 550px ;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img{
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    display: flex;
+    flex: 1;
+}
+
+.card-content{
+    width: 100%;
+    height: 45%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-content > h3{
+    margin-bottom: 5px;
+}
+
+.card-content > p{
+    margin-bottom: 5px;
+}
+
+.btn-secondary{
+    border-radius: var(--btn-radius);
+    background-color: white;
+    border: 1px solid black;
+    padding: var(--btn-padding);
+    align-self: center;
+    text-align: center;
+}
+
+.card-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+main{
+    padding: 0px 20%;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+footer * {
+    color: white;
+}
+
+.footer-heading{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-heading > h3{
+    align-self: center;
+}
+
+.more-links{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.follow{
+    align-self: center;
+}
+
+.icon{
+    font-family: FontAwesome;
+    color: rgb(255, 255, 255);
+}
+
+.follow > div{
+    display: flex;
+    justify-content: space-between;
+}
