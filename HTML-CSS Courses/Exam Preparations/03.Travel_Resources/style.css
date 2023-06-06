@@ -55,6 +55,11 @@ body{
     justify-content: space-between;
 }
 
+body > section > article > h3{
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+
 
 .page-header > header > nav > ul{
     display: flex;
@@ -70,7 +75,12 @@ body{
 
 .content{
     margin-bottom: 20px;
-    display: block
+    display: block;
+    width: 50%;
+}
+
+.text-wrapper{
+    display: flex;
 }
 
 .title-wrapper{
