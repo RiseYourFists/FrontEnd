@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    /*Element style reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Designated place for vars*/
+}
+
+html{
+    /*Designated place for fonts*/
+}
+
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    /* position: relative; */
+}
+
+/*-----COMMON STYLES-----*/
+
+/*-----------------------*/
