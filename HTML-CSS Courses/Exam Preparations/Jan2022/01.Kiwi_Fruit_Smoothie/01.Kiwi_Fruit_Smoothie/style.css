@@ -83,7 +83,7 @@ img{
 
 h1{
     font-size: 52px;
-    border-bottom: 2px dashed var(--color-primary-highlight);
+    border-bottom: 2px dotted var(--color-primary-highlight);
     text-align: center;
     margin-bottom: 10px;
 }
