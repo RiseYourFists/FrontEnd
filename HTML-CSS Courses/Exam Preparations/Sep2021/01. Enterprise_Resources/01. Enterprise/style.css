@@ -19,6 +19,7 @@
 
 html{
     /*Designated place for fonts*/
+    font-family: Helvetica;
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
