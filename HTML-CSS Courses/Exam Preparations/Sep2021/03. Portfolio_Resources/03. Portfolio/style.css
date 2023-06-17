@@ -1,0 +1,256 @@
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+*,
+*::after,
+*::before{
+    /*Element style reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    /*Designated place for vars*/
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #efefef;
+    --color-bg-icon: #909090;
+
+    --padding-primary: 80px 160px;
+    --padding-header: 20px 80px 0px 80px;
+    --padding-footer: 20px 320px 20px 320px;
+
+    --size-primary: 1.2rem;
+    --size-title-primary: 1.8rem;
+
+    --gap-form: 30px;
+}
+
+html{
+    /*Designated place for fonts*/
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--size-primary);
+}
+
+body{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-bg-primary);
+    /* height: 100vh; */
+    /* position: relative; */
+}
+
+body > *{
+    background-color: var(--color-bg-secondary);
+}
+
+/*-----COMMON STYLES-----*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    font-size: var(--size-title-primary);
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.title-decoration{
+    font-weight: 100;
+}
+
+.icon i{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    background-color: var(--color-bg-icon);
+}
+
+.ico-list{
+    display: flex;
+    gap: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#vertical{
+    height: 80px;
+    width: 1px;
+    border: 1px solid gray;
+}
+
+#horizontal{
+    width: 80px;
+    height: 1px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+p.text{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+p{
+    font-style: italic;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-form);
+}
+
+form > *{
+    width: 100%;
+}
+
+input, #msg{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+::placeholder{
+    color: black; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary{
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+    border: none;
+    font-weight: 600;
+}
+
+/*-----------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-bg-primary);
+}
+
+main > *{
+    height: 70vh;
+    background-color: var(--color-bg-secondary);
+}
+
+.content, .img-wrapper{
+    width: 50%;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.content > *{
+    width: 100%;
+}
+
+#hero1, #hero3, #hero4{
+    padding: var(--padding-primary);
+}
+
+.intro{
+    padding: var(--padding-header);
+}
+
+.intro, #hero1, #hero3, #hero4, footer{
+    display: flex;
+    gap: 140px;
+}
+
+.nav{
+    display: flex;
+    padding: 20px;
+}
+
+.nav a{
+    margin-left: auto;
+}
+
+#hero1 img{
+    width: auto;
+}
+
+#hero1 .wrapper{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#hero1 .title{
+    margin-bottom: 0;
+}
+
+#hero4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+
+.float{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+}
+
+#hero4 .wrapper{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    gap: 160px;
+    justify-content: center;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.bottom-footer{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-footer);
+}
+
+.input-wrapper{
+    display: flex;
+    gap: var(--gap-form);
+}
+
+.input-wrapper > *{
+    flex: 1 1 50%;
+}
+
+#msg{
+    resize: none;
+}
