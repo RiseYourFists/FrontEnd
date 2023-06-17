@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before{
+    /*Element style reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Designated place for vars*/
+
+    --color-primary-bg: #f6f8f9;
+    --color-primary-btn: #786eff;
+
+    --btn-padding-top-bottom: 16px;
+    --btn-padding-left-right: 32px;
+}
+
+html{
+    /*Designated place for fonts*/
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----COMMON STYLES-----*/
+img{
+    width: 80%;
+    height: 80%;
+    object-fit:cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: var(--btn-padding-top-bottom) var(--btn-padding-left-right);
+    border-radius: 4px;
+}
+
+.btn-primary{
+    background-color: var(--color-primary-btn);
+    color: white;
+}
+
+.btn-secondary{
+    color:black;
+    border: 1px solid black;
+    padding: calc(var(--btn-padding-top-bottom) - 1px) calc(var(--btn-padding-left-right) - 1px);
+}
+
+/*-----------------------*/
+
+.card{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color-primary-bg);
+}
+
+.content, .img-wrapper{
+    width: 50%;
+    height: 100%;
+}
+
+.content{
+    padding: 120px 50px;
+}
+
+.sub-text{
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin-bottom: -2.7rem;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.wrapper{
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.desc{
+    color: gray;
+}
+
+.img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: end;
+}
